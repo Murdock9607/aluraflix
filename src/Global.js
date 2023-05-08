@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 </style>
 
+
 const GlobalStyle = createGlobalStyle`
 * {
     box-sizing: border-box;
@@ -10,7 +11,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     text-decoration: none;
-    background-color: black;
+    background-color:#00000090;
+    color: #fff;
+;
   }
 `;
 export default GlobalStyle;

@@ -6,8 +6,6 @@ const Logo = styled.img`
     height: 60px;
     width: 253px;
     margin-top: 10px;
-    margin-bottom: 20px;
-    
 `;
 
 const StyledFooter = styled.div`
@@ -15,6 +13,7 @@ const StyledFooter = styled.div`
     align-items: center;
     justify-content: center;
     border-top: 1px solid #2A7AE4;
+    background-color: black;
 `;
 
 const Footer = () => {

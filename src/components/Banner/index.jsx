@@ -22,7 +22,6 @@ const BannerTitulo = styled.div`
     top: 512px;
     left: 5%;
     text-align: left;
-    color: #fff;
     background: transparent;
     font-family: 'Roboto';
     font-weight: 400;
@@ -34,7 +33,6 @@ const BannerTexto = styled.div`
     top: 575px;
     left: 5%;
     text-align: left;
-    color: #fff;
     background: transparent;
     font-family: 'Roboto';
     font-weight: 300;
@@ -50,7 +48,6 @@ const Division = styled.a`
     padding: 5px 20px;
     font-weight: 400;
     border: none;
-    color: white;
     background: #6BD1FF;
     font-family: 'Roboto';
     font-size: 60px;
