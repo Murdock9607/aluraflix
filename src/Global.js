@@ -1,7 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-</style>
 
 
 const GlobalStyle = createGlobalStyle`
@@ -11,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     text-decoration: none;
-    background-color:#00000090;
     color: #fff;
 ;
   }

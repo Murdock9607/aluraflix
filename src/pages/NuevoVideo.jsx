@@ -7,7 +7,8 @@ import { useState } from "react";
 const Titulo = styled.h1`
   font-size: 60px;
   text-align: center;
-  margin: 3rem 0 3rem 0;
+  padding: 3rem 0 3rem 0;
+  font-family: "Roboto", sans-serif;
 `;
 
 const StyledForm = styled.div`
@@ -48,8 +49,8 @@ export default function NuevoVideo() {
   };
 
   return (
-    <form onSubmit={manejarEnvio}>
-      <Titulo style={{ backgroundColor: "transparent" }}>Nuevo Video</Titulo>
+    <form onSubmit={manejarEnvio} style={{backgroundColor: "#000000E5"}}>
+      <Titulo>Nuevo Video</Titulo>
       <StyledForm>
         <CampoTexto
           placeholder="Titulo"

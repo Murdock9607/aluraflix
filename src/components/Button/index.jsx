@@ -13,7 +13,7 @@ const Btn = styled.button`
     color: white;
     background: ${ (props) => props.primary ? "#2A7AE4" : "transparent" };
     cursor: pointer;
-    font-family: "Source sans pro";
+    font-family: "Source sans pro", sans-serif;
     font-size: 18px;
 `;
 

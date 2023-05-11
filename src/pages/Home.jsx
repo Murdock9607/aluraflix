@@ -1,16 +1,19 @@
-import Banner from '../components/Banner';
-import Categoria from '../components/Categoria';
+import styled from "styled-components";
+import Banner from "../components/Banner";
+import Categoria from "../components/Categoria";
 
-
+const StyledHome = styled.div`
+  background-color: #000000E5;
+`;
 const Home = () => {
-    return (
-        <>
-            <Banner />
-            <Categoria categoria="Front end" color="#6BD1FF" linkImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfDtUF_HGoNkOwNY-k0hRxG4GAyDeVfqTtw"/>
-            <Categoria categoria="Back end" color="#00C86F" linkImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfDtUF_HGoNkOwNY-k0hRxG4GAyDeVfqTtw"/>
-            <Categoria categoria="Innovación y gestión" color="#FE8C2A" linkImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfDtUF_HGoNkOwNY-k0hRxG4GAyDeVfqTtw"/>
-        </>
-    )
-}
+  return (
+    <StyledHome>
+      <Banner />
+      <Categoria categoria="Front end" color="#6BD1FF" descripcion="Formación Front End de Alura Latam"/>
+      <Categoria categoria="Back end" color="#00C86F" descripcion="Formación Back End de Alura Latam"/>
+      <Categoria categoria="Innovación y gestión" color="#FE8C2A" descripcion="Formación Innovación y Gestión de Alura Latam"/>
+    </StyledHome>
+  );
+};
 
-export default Home
+export default Home;

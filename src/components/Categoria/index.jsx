@@ -2,36 +2,32 @@ import styled from "styled-components";
 
 const StyledContent = styled.div`
   background-color: transparent;
+  padding: 2rem 0 2rem 5rem;
   display: flex;
-  flex-direction: column;
 `;
 
 const Categoria = (props) => {
-  const Division = styled.a`
+  const StyledCategoria = styled.a`
     border-radius: 3px;
     padding: 5px 20px;
     font-weight: 400;
     border: none;
     background: ${props.color};
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 35px;
-    margin: 10rem 0 6rem 6rem;
   `;
-  const ImgVideo = styled.img`
-    height: 260.85px;
-    width: 432px;
-    border-radius: 4px;
-    border: 3px solid ${props.color};
-    margin: 1rem;
+  const Descripcion = styled.h1`
+    align-self: center;
+    padding-left: 2rem;
+    font-family: "Roboto", sans-serif;
   `;
+  const categorias = [{ nombre: "", descripcion: "", color: "" }];
 
   return (
-    <>
-      <Division>{props.categoria}</Division>
-      <StyledContent>
-        <ImgVideo src={props.linkImage} />
-      </StyledContent>
-    </>
+    <StyledContent>
+      <StyledCategoria>{props.categoria}</StyledCategoria>
+      <Descripcion>{props.descripcion}</Descripcion>
+    </StyledContent>
   );
 };
 
