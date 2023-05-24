@@ -27,7 +27,7 @@ const StyledButtons = styled.div`
   background-color: transparent;
 `;
 
-export default function NuevoVideo() {
+export default function NuevoVideo(props) {
   const [titulo, setTitulo] = useState("");
   const [link, setlink] = useState("");
   const [imagen, setimagen] = useState("");
@@ -45,7 +45,7 @@ export default function NuevoVideo() {
       descripcion: descripcion,
       codigo: codigo,
     };
-    console.log(datosAEnviar);
+    props.registrarVideo(datosAEnviar);
   };
 
   return (
@@ -70,7 +70,7 @@ export default function NuevoVideo() {
           valor={imagen}
           setValor={setimagen}
         />
-        <ListaOpciones valor={categoria} setcategoria={setcategoria} />
+        <ListaOpciones valor={categoria} setcategoria={setcategoria} categorias={props.categorias} />
         <CampoTexto
           placeholder="Descripción"
           valor={descripcion}

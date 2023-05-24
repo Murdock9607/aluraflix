@@ -9,7 +9,7 @@ const ListaOpciones = (props) => {
     width: 90%;
     background-color: #53585d;
   `;
-  const categorias = ["Front End", "Backend", "Innovación y gestión"];
+
   const manejarCambio = (e) =>{
     console.log( e.target.value)
     props.setcategoria(e.target.value)
@@ -19,7 +19,7 @@ const ListaOpciones = (props) => {
       <option value="" disabled defaultValue="" hidden>
         Selecciona una categoría
       </option>
-      {categorias.map((categoria, index) => <option key={index} value={categoria}>{categoria}</option>)}
+      {props.categorias.map((categoria, index) => <option key={index} value={categoria}>{categoria}</option>)}
     </StyledSelect>
   );
 };

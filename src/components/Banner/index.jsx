@@ -48,7 +48,7 @@ const Banner = () => {
         </BannerTexto>
       </div>
       <VideoCard 
-      linkImage="https://i.ytimg.com/vi/ov7vA5HFe6w/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC2B6wphxS2RA7tQcOphXdyi6WF4g"
+      imagen="https://i.ytimg.com/vi/ov7vA5HFe6w/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC2B6wphxS2RA7tQcOphXdyi6WF4g"
       color="#6BD1FF"
       />
     </ImgBanner>

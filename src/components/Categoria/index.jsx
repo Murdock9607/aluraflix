@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import VideoCard from "../Carrusel/VideoCard";
 
 const StyledContent = styled.div`
   background-color: transparent;
@@ -21,7 +22,7 @@ const Categoria = (props) => {
     padding-left: 2rem;
     font-family: "Roboto", sans-serif;
   `;
-  const categorias = [{ nombre: "", descripcion: "", color: "" }];
+  // const categorias = [{ nombre: "", descripcion: "", color: "" }, ];
 
   return (
     <StyledContent>
